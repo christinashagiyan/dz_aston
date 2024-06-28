@@ -1,7 +1,5 @@
 package dz1;
 
-import java.util.Random;
-
 public class Zombie extends Enemy{
     public Zombie(int health) {
         super(health);

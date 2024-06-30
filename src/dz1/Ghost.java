@@ -2,6 +2,8 @@ package dz1;
 
 public class Ghost extends Enemy{
 
+    private static final int DAMAGE = 2;
+    private static final double DISAPPEARANCE_MODIFIER = 0.7;
     public Ghost(int health) {
         super(health);
     }
@@ -9,13 +11,13 @@ public class Ghost extends Enemy{
     @Override
     public void attackHero(Hero hero) {
         System.out.println("Призрак нападает на героя!");
-        hero.takeDamage(2); // наносимый призраком урон = 2
+        hero.takeDamage(DAMAGE); // наносимый призраком урон = 2
     }
 
     @Override
     public void takeDamage(int damage){
-        // призрак может избежать потерю здоровья за счет исчезновения в 30% случаев
-        if(Math.random() > 0.7){
+        // призрак может избежать потерю здоровья за счет исчезновения
+        if(Math.random() > DISAPPEARANCE_MODIFIER){
             System.out.println("Призрак исчез!");
             System.out.println("Здоровье врага: " + super.getHealth());
         }

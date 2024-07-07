@@ -19,3 +19,13 @@
   - Наносимый урон равен целому числу из интервала [0;4]
 ---   
 *Основное тестирование в классе BattleGround*
+
+ 
+ # 2 Коллекции
+* **MyList** - абстрактный класс 
+  * toString()
+  * статический и нестатический методы сортировки sort(MyList<E> myList, Comparator<? super E> comparator), sort(Comparator<? super E> comparator)
+  * абстрактные методы add (варианты для вставки в конец и по индексу), get, set, remove (варианты удаления по индексу и значению), addAll (в конец и по индексу), size
+* **MyArrayList** - наследует MyList
+* **MyLinkedList** - наследует MyList, есть свои методы (addFirst, addLast, getFirst, getLast)
+* **MyListsTest** - класс для тестирования

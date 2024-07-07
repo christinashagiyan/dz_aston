@@ -29,3 +29,5 @@
 * **MyArrayList** - наследует MyList
 * **MyLinkedList** - наследует MyList, есть свои методы (addFirst, addLast, getFirst, getLast)
 * **MyListsTest** - класс для тестирования
+ 
+ # 3 Стримы и Лямбды
